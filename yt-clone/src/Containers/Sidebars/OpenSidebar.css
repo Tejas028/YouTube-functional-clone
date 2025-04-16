@@ -1,0 +1,590 @@
+.openSidebar {
+    position: absolute;
+    background-color: #0f0f0f;
+    height: calc(100vh - 56px); /* Ensures it takes up the full height of the viewport minus the margin-top */
+    width: 240px;
+    margin-top: 56px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Initially hide the scrollbar */
+.openSidebar::-webkit-scrollbar {
+    width: 0px; /* Makes the scrollbar invisible */
+}
+
+/* Show scrollbar only when hovering */
+.openSidebar:hover::-webkit-scrollbar {
+    width: 8px; /* Normal scrollbar width */
+}
+
+/* Scrollbar track */
+.openSidebar::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+
+/* Scrollbar thumb */
+.openSidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+/* Scrollbar thumb on hover */
+.openSidebar:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* For Firefox */
+.openSidebar {
+    scrollbar-width: none; /* Hide scrollbar */
+}
+
+.openSidebar:hover {
+    scrollbar-width: thin; /* Show scrollbar on hover */
+    scrollbar-color: rgba(255, 255, 255, 0.3) #0f0f0f;
+}
+
+
+.guideSection{
+    padding: 12px;
+    width: inherit;
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.homeOpen{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.homeOpen svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.shortsOpen{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.shortsOpen svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.subscriptionsOpen{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.subscriptionsOpen svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.youSection{
+    padding: 12px;
+    width: inherit;
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.youOpen{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.youOpen svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyOpen{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.historyOpen svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInSection{
+    padding: 16px 32px;
+    font-size: 15px;
+    font-weight: 400;
+    width: inherit;
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    gap: 10px;
+}
+
+.signInButton{
+    color: rgb(62, 166, 255);
+    display: flex;
+    border: 1px solid rgba(255,255,255,0.2);
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 25px;
+}
+
+.exploreSection{
+    padding: 12px;
+    width: inherit;
+    /* margin-bottom: 8px; */
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);   
+}
+
+.explore{
+    padding: 10px 15px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.trending{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.shopping{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 23px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.music{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.movies{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.live{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.gaming{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.news{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sports{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.courses{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fashion{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.podcasts{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.moreFromYtSection{
+    padding: 12px;
+    width: inherit;
+    /* margin-bottom: 8px; */
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.more{
+    padding: 10px 15px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ytPremium{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ytMusic{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ytKids{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.settingsSection{
+    padding: 12px;
+    width: inherit;
+    /* margin-bottom: 8px; */
+    /* background-color: aliceblue; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.settings{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.report{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 23px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.help{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 18.5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.feedback{
+    padding: 10px 12px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.copyrightSection{
+    padding: 12px;
+    width: inherit;
+    /* margin-bottom: 2px; */
+    /* background-color: aliceblue; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: fit-content;
+    flex-direction: column;
+    /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+}
+
+.copyright{
+    padding: 10px 15px;
+    width: 200px;
+    height: auto;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    flex-wrap: wrap;
+    row-gap: 1px;
+}
+
+.ltr{
+    color: rgba(255,255,255,0.1);
+    /* margin-bottom: 8px; */
+}

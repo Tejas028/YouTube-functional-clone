@@ -1,0 +1,11 @@
+.homeSignedOut {
+    flex: 1;
+    /* Takes the remaining space */
+    width: 100%;
+    padding: 20px;
+    /* background-color: #f8f9fa; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

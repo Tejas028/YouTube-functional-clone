@@ -1,0 +1,144 @@
+.navbar{
+    /* border: 2px solid white; */
+    position: fixed;
+    color: white;
+    height: 56px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  /* YouTubeIcon{
+    width: 20px;
+    height: 20px;
+    color: white;
+  } */
+  
+  .topLeft{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    color: white;
+  }
+
+  .hamBerger{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: default;
+  }
+
+  .logo{
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    
+    /* background-color: white; */
+  }
+
+  .topCenter{
+    display: flex;
+  }
+
+  .searchBar{
+    border: solid 1px rgba(128, 128, 128, 0.3);
+    padding-left: 7px;
+    border-radius: 20px;
+    display: inline-flex;
+    height: 40px;
+  }
+
+  .searchBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-right: solid 1px rgba(128, 128, 128, 0.2);
+  }
+
+  .searchBox input{
+    width: 35vw;
+  }
+
+  .searchInput{
+    background-color: #0f0f0f;
+    outline: none;
+    padding-left: 12px;
+    height: fit-content;
+    height: 30px;
+    /* cursor: pointer; */
+    /* margin: 2px; */
+  }
+
+  .searchInput::placeholder{
+    color: rgba(128, 128, 128, 1);
+  }
+
+  .searchIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+  }
+
+  .searchIcon button{
+    margin-right: 5px;
+    color: white;
+    /* width: 20px; */
+    /* background-color: antiquewhite; */
+  }
+
+  .audio{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px; */
+    margin-left: 15px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+
+  .topRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .dots{
+    cursor: pointer;
+  }
+
+  .profile{
+    cursor: pointer;
+    /* padding: 2px; */
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 110px;
+    height: 40px;
+    border: solid 1px rgba(128, 128, 128, 0.6);
+    border-radius: 20px;
+  }

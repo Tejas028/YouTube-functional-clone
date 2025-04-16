@@ -1,0 +1,94 @@
+.sideBar{
+    position: absolute;
+    background-color: #0f0f0f;
+    height: auto;
+    width: 70px;
+    /* border: 2px solid white; */
+    margin-top: 56px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home{
+    height: 75px;
+    width: 66px;
+    padding: 16px 0px 14px 0px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.home svg{
+    width: 40px;
+    height: 35px;
+    /* align-items: n; */
+}
+
+.shorts{
+    height: 75px;
+    width: 66px;
+    padding: 16px 0px 14px 0px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.subscriptions{
+    height: 75px;
+    width: 66px;
+    padding: 16px 0px 14px 0px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.you{
+    height: 75px;
+    width: 66px;
+    padding: 16px 0px 14px 0px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.history{
+    height: 75px;
+    width: 66px;
+    padding: 16px 0px 14px 0px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 7px;
+}
